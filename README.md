@@ -24,13 +24,13 @@ Si un user se connecte plusieurs fois par jour, on ne comptabilisera qu'une seul
 [2016-06] => 22 (Juin 2016, 6 connexion)
 ```
 
-## Help (Les fonctions si dessous sont des propositions)
+## Help (Les fonctions si dessous sont des propositions)  
 [Boucle **for**](http://php.net/manual/fr/control-structures.for.php)  
-[Boucle **foreach**](http://php.net/manual/fr/control-structures.foreach.php)
-[Fonction **count**](http://php.net/manual/fr/function.count.php)
-[Fonction **substr**](http://php.net/manual/fr/function.substr.php)
-[Fonction **date-parse**](http://php.net/manual/fr/function.date-parse.php)
-[Fonction **array-key-exists**](http://php.net/manual/fr/function.array-key-exists.php)
-[Mémo PHP](https://docs.google.com/document/d/1BnLRqMVgebwGzkSgxrnDgpMfJbH8w7xmOfQC0nMJ7Fs/edit)
+[Boucle **foreach**](http://php.net/manual/fr/control-structures.foreach.php)  
+[Fonction **count**](http://php.net/manual/fr/function.count.php)  
+[Fonction **substr**](http://php.net/manual/fr/function.substr.php)  
+[Fonction **date-parse**](http://php.net/manual/fr/function.date-parse.php)  
+[Fonction **array-key-exists**](http://php.net/manual/fr/function.array-key-exists.php)  
+[Mémo PHP](https://docs.google.com/document/d/1BnLRqMVgebwGzkSgxrnDgpMfJbH8w7xmOfQC0nMJ7Fs/edit)  
 
 
