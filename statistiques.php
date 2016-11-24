@@ -169,7 +169,16 @@ $statistiques = array(
   array('id' => '78','id_user' => '3','date' => '2016-06-23','nb_visites_accueil' => '3','nb_visites_ged' => NULL,'nb_visites_agenda' => NULL,'nb_visites_annuaire' => NULL,'nb_visites_formation' => NULL,'nb_visites_emploi' => NULL,'nb_visites_dialogue' => NULL),
   array('id' => '79','id_user' => '42','date' => '2016-06-24','nb_visites_accueil' => '3','nb_visites_ged' => NULL,'nb_visites_agenda' => NULL,'nb_visites_annuaire' => NULL,'nb_visites_formation' => NULL,'nb_visites_emploi' => NULL,'nb_visites_dialogue' => NULL),
   array('id' => '80','id_user' => '1','date' => '2016-06-24','nb_visites_accueil' => '5','nb_visites_ged' => NULL,'nb_visites_agenda' => NULL,'nb_visites_annuaire' => NULL,'nb_visites_formation' => NULL,'nb_visites_emploi' => NULL,'nb_visites_dialogue' => NULL),
-  array('id' => '81','id_user' => '3','date' => '2016-06-27','nb_visites_accueil' => '1','nb_visites_ged' => NULL,'nb_visites_agenda' => NULL,'nb_visites_annuaire' => NULL,'nb_visites_formation' => NULL,'nb_visites_emploi' => NULL,'nb_visites_dialogue' => NULL)
+  array('id' => '81',
+        'id_user' => '3',
+        'date' => '2016-06-27',
+        'nb_visites_accueil' => '1',
+        'nb_visites_ged' => NULL,
+        'nb_visites_agenda' => NULL,
+        'nb_visites_annuaire' => NULL,
+        'nb_visites_formation' => NULL,
+        'nb_visites_emploi' => NULL,
+        'nb_visites_dialogue' => NULL)
 );
 
 
@@ -178,7 +187,13 @@ $statistiques = array(
 
         $stat = count($stat); //retourne le nombre de valeurs de l'array du visiteur 
 
-        echo $stat[0] . "\n";
+        echo $stat['id_user'] . "\n"; // affiche du vide pk?
+
+        foreach ($$stat as $key => $value) {
+            echo $value['id_user']."\n";
+        }
+
+        
 
 
     }
