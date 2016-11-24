@@ -87,5 +87,101 @@ $statistiques = array(
   array('id' => '78','id_user' => '3','date' => '2016-06-23','nb_visites_accueil' => '3','nb_visites_ged' => NULL,'nb_visites_agenda' => NULL,'nb_visites_annuaire' => NULL,'nb_visites_formation' => NULL,'nb_visites_emploi' => NULL,'nb_visites_dialogue' => NULL),
   array('id' => '79','id_user' => '42','date' => '2016-06-24','nb_visites_accueil' => '3','nb_visites_ged' => NULL,'nb_visites_agenda' => NULL,'nb_visites_annuaire' => NULL,'nb_visites_formation' => NULL,'nb_visites_emploi' => NULL,'nb_visites_dialogue' => NULL),
   array('id' => '80','id_user' => '1','date' => '2016-06-24','nb_visites_accueil' => '5','nb_visites_ged' => NULL,'nb_visites_agenda' => NULL,'nb_visites_annuaire' => NULL,'nb_visites_formation' => NULL,'nb_visites_emploi' => NULL,'nb_visites_dialogue' => NULL),
-  array('id' => '81','id_user' => '3','date' => '2016-06-27','nb_visites_accueil' => '1','nb_visites_ged' => NULL,'nb_visites_agenda' => NULL,'nb_visites_annuaire' => NULL,'nb_visites_formation' => NULL,'nb_visites_emploi' => NULL,'nb_visites_dialogue' => NULL)
+  array('id' => '81','id_user' => '3','date' => '2016-06-27','nb_visites_accueil' => '1','nb_visites_ged' => NULL,'nb_visites_agenda' => NULL,'nb_visites_annuaire' => NULL,'nb_visites_formation' => NULL,'nb_visites_emploi' => NULL,'nb_visites_dialogue' => NULL),
+
+  array('id' => '81','id_user' => '3','date' => '2016-01-27','nb_visites_accueil' => '1','nb_visites_ged' => NULL,'nb_visites_agenda' => NULL,'nb_visites_annuaire' => NULL,'nb_visites_formation' => NULL,'nb_visites_emploi' => NULL,'nb_visites_dialogue' => NULL),
+
+  array('id' => '81','id_user' => '3','date' => '2016-02-27','nb_visites_accueil' => '1','nb_visites_ged' => NULL,'nb_visites_agenda' => NULL,'nb_visites_annuaire' => NULL,'nb_visites_formation' => NULL,'nb_visites_emploi' => NULL,'nb_visites_dialogue' => NULL),
+
+  array('id' => '81','id_user' => '3','date' => '2016-03-27','nb_visites_accueil' => '1','nb_visites_ged' => NULL,'nb_visites_agenda' => NULL,'nb_visites_annuaire' => NULL,'nb_visites_formation' => NULL,'nb_visites_emploi' => NULL,'nb_visites_dialogue' => NULL),
+
+  array('id' => '81','id_user' => '3','date' => '2016-04-27','nb_visites_accueil' => '1','nb_visites_ged' => NULL,'nb_visites_agenda' => NULL,'nb_visites_annuaire' => NULL,'nb_visites_formation' => NULL,'nb_visites_emploi' => NULL,'nb_visites_dialogue' => NULL),
+
+  array('id' => '81','id_user' => '3','date' => '2016-05-27','nb_visites_accueil' => '1','nb_visites_ged' => NULL,'nb_visites_agenda' => NULL,'nb_visites_annuaire' => NULL,'nb_visites_formation' => NULL,'nb_visites_emploi' => NULL,'nb_visites_dialogue' => NULL),
+
+  array('id' => '81','id_user' => '3','date' => '2016-06-27','nb_visites_accueil' => '1','nb_visites_ged' => NULL,'nb_visites_agenda' => NULL,'nb_visites_annuaire' => NULL,'nb_visites_formation' => NULL,'nb_visites_emploi' => NULL,'nb_visites_dialogue' => NULL),
+
+  array('id' => '81','id_user' => '3','date' => '2016-07-27','nb_visites_accueil' => '1','nb_visites_ged' => NULL,'nb_visites_agenda' => NULL,'nb_visites_annuaire' => NULL,'nb_visites_formation' => NULL,'nb_visites_emploi' => NULL,'nb_visites_dialogue' => NULL),
+
+  array('id' => '81','id_user' => '3','date' => '2016-08-27','nb_visites_accueil' => '1','nb_visites_ged' => NULL,'nb_visites_agenda' => NULL,'nb_visites_annuaire' => NULL,'nb_visites_formation' => NULL,'nb_visites_emploi' => NULL,'nb_visites_dialogue' => NULL),
+
+  array('id' => '81','id_user' => '3','date' => '2016-09-27','nb_visites_accueil' => '1','nb_visites_ged' => NULL,'nb_visites_agenda' => NULL,'nb_visites_annuaire' => NULL,'nb_visites_formation' => NULL,'nb_visites_emploi' => NULL,'nb_visites_dialogue' => NULL),
+
+  array('id' => '81','id_user' => '3','date' => '2016-10-27','nb_visites_accueil' => '1','nb_visites_ged' => NULL,'nb_visites_agenda' => NULL,'nb_visites_annuaire' => NULL,'nb_visites_formation' => NULL,'nb_visites_emploi' => NULL,'nb_visites_dialogue' => 54454545),
+
 );
+
+// print_r(array_count($statistiques));
+
+
+function statAnnee($statistiques){
+    $annee2016=0;
+    $annee2017=0;
+    foreach ($statistiques as $value) {
+        $date = $value['date'];
+        $date_parse = date_parse($date);
+        $year= $date_parse['year'];
+        if ($year=='2016') {
+            $annee2016++;
+        }
+        else {
+            $annee2017++;
+        }
+    
+    //return date_parse($value['date'])['year'];
+
+    }
+    //return array('2016'=>$annee2016, '2017'=>$annee2017);
+    return ['2016'=>$annee2016, '2017'=>$annee2017];
+}
+
+
+//print_r(statAnnee($statistiques));
+
+ $tabmois = array(
+    "2016" => array(
+        "1" => 45,
+        "2" => 32
+        ),
+    "2017" => array(
+        "1" => 45,
+        "2" => 32
+        )
+    )
+
+
+function statMois($statistiques){
+    $tabmois = [];
+
+    foreach ($statistiques as $value) {
+        $date = $value['date'];
+        $date_parse = date_parse($date);
+        $mois= $date_parse['month'];
+
+        if (array_key_exists($mois, $tabmois)){
+            $tabmois[$mois]++;
+        }
+        else
+            $tabmois[$mois] = 1;
+       
+
+    }
+    return $tabmois;
+}
+
+// print_r(statMois($statistiques));
+
+
+function sttatMonth($statistiques){
+    foreach ($statistiques as $key => $value) {
+        foreach ($value as $key2 => $value2) {
+            if ($key2 == 'date') {
+                $month = date_parse($value2)['ye'];
+                if
+            }
+        }
+    }
+    return $month;
+}
+
+// print_r(sttatMonth($statistiques));
