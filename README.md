@@ -24,7 +24,7 @@ Si un user se connecte plusieurs fois par jour, on ne comptabilisera qu'une seul
 [2016-06] => 22 (Juin 2016, 6 connexion)
 ```
 
-## Help (Les fonctions si dessous sont des propositions)  
+## Help (Les fonctions ci dessous sont des propositions)  
 [Boucle **for**](http://php.net/manual/fr/control-structures.for.php)  
 [Boucle **foreach**](http://php.net/manual/fr/control-structures.foreach.php)  
 [Fonction **count**](http://php.net/manual/fr/function.count.php)  
