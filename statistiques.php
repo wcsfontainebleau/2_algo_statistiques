@@ -9,6 +9,7 @@
 //
 
 // `perchempnzdb1`.`statistiques`
+
 $statistiques = array(
   array('id' => '1','id_user' => '1','date' => '2016-03-01','nb_visites_accueil' => '14','nb_visites_ged' => NULL,'nb_visites_agenda' => NULL,'nb_visites_annuaire' => NULL,'nb_visites_formation' => NULL,'nb_visites_emploi' => NULL,'nb_visites_dialogue' => NULL),
   array('id' => '3','id_user' => '3','date' => '2016-03-01','nb_visites_accueil' => '32','nb_visites_ged' => NULL,'nb_visites_agenda' => NULL,'nb_visites_annuaire' => NULL,'nb_visites_formation' => NULL,'nb_visites_emploi' => NULL,'nb_visites_dialogue' => NULL),
@@ -89,3 +90,20 @@ $statistiques = array(
   array('id' => '80','id_user' => '1','date' => '2016-06-24','nb_visites_accueil' => '5','nb_visites_ged' => NULL,'nb_visites_agenda' => NULL,'nb_visites_annuaire' => NULL,'nb_visites_formation' => NULL,'nb_visites_emploi' => NULL,'nb_visites_dialogue' => NULL),
   array('id' => '81','id_user' => '3','date' => '2016-06-27','nb_visites_accueil' => '1','nb_visites_ged' => NULL,'nb_visites_agenda' => NULL,'nb_visites_annuaire' => NULL,'nb_visites_formation' => NULL,'nb_visites_emploi' => NULL,'nb_visites_dialogue' => NULL)
 );
+
+//echo "[2016] => " . count($statistiques). "\n";
+//print_r(date_parse($stats['date']));
+
+
+foreach ($statistiques as $stats){
+    foreach ($stats as $value){
+        for ($i=1; $i<count($value); $i++) {
+            $connexion = $i;
+            echo ($connexion);
+        }
+        $result=($stats['id_user']);
+        echo $result;
+
+    }
+
+}
