@@ -101,14 +101,22 @@ $statistiques = array(
 );
 
 
+function nbvisite($statistiques) {
 $essai ='';
+$nbConnexionToutUser = 0;
 foreach ($statistiques as $key => $value) {
   # code...
-  echo $statistiques[$key]['id'].' : ';
-  // echo $statistiques[$key]['date'].'<br>';
-  $essai = date_parse($statistiques[$key]['date']);
-  echo $essai['year'].'<br>';
-  echo $essai['month'].'<br>';
+  // echo $statistiques[$key]['id'].' : ';
+  // // echo $statistiques[$key]['date'].'<br>';
+  // $essai = date_parse($statistiques[$key]['date']);
+  // echo $essai['year'].'<br>';
+  // echo $essai['month'].'<br>';
+  $nbConnexionToutUser = $nbConnexionToutUser + intval($statistiques[$key]['nb_visites_accueil']);
+  echo $statistiques[$key]['nb_visites_accueil'].'<br>';
 }
 
+echo "nb de visite : " .$nbConnexionToutUser;
 
+}
+
+nbvisite($statistiques);
