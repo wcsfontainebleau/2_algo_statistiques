@@ -99,24 +99,73 @@ $statistiques = array(
   array('id' => '80','id_user' => '1','date' => '2016-06-24','nb_visites_accueil' => '5','nb_visites_ged' => NULL,'nb_visites_agenda' => NULL,'nb_visites_annuaire' => NULL,'nb_visites_formation' => NULL,'nb_visites_emploi' => NULL,'nb_visites_dialogue' => NULL),
   array('id' => '81','id_user' => '3','date' => '2016-06-27','nb_visites_accueil' => '1','nb_visites_ged' => NULL,'nb_visites_agenda' => NULL,'nb_visites_annuaire' => NULL,'nb_visites_formation' => NULL,'nb_visites_emploi' => NULL,'nb_visites_dialogue' => NULL)
 );
-
-
+// ------------------------------------
+// Fonction qui calcul le nombre de connexion sur la page d'accueil sans distinction des USER
+// ------------------------------------
 function nbvisite($statistiques) {
-$essai ='';
-$nbConnexionToutUser = 0;
-foreach ($statistiques as $key => $value) {
-  # code...
-  // echo $statistiques[$key]['id'].' : ';
-  // // echo $statistiques[$key]['date'].'<br>';
-  // $essai = date_parse($statistiques[$key]['date']);
-  // echo $essai['year'].'<br>';
-  // echo $essai['month'].'<br>';
-  $nbConnexionToutUser = $nbConnexionToutUser + intval($statistiques[$key]['nb_visites_accueil']);
-  echo $statistiques[$key]['nb_visites_accueil'].'<br>';
-}
-
-echo "nb de visite : " .$nbConnexionToutUser;
-
+  $nbConnexionToutUser = 0;
+  foreach ($statistiques as $key => $value) {
+    $nbConnexionToutUser = $nbConnexionToutUser + intval($statistiques[$key]['nb_visites_accueil']);
+  }
+echo "nb de visite sur la page d'accueil tout utisateur confondu : " .$nbConnexionToutUser.'<br>';
 }
 
 nbvisite($statistiques);
+
+// ------------------------------------
+// Fonction nb de connexion par années
+// ------------------------------------
+function nbVisiteParAn($statistiques) {
+  
+  $nbConnexionToutUserParAn = 0;
+
+  // Recherche des Années
+  $parseDate = array();
+  $tabAnnées = array();
+  $i =0;
+  // $tabAnnées2 = array();
+  // for( $i<=count($statistiques);) {
+    foreach ($statistiques as $key => $value) {
+      $parseDate[$i] = date_parse($statistiques[$key]['date']);
+      $tabAnnées[$i] = $parseDate[$key]['year'];
+
+      $i++;
+      // $tabAnnées2 = $tabAnnées['year'].'<br>';
+      
+    } 
+  // }
+  $tabAnnées = array_unique($tabAnnées);
+  print_r($tabAnnées).'<br>';
+
+  $nBAnnée = count($tabAnnées);
+  echo "$nBAnnée";
+}
+
+// ------------------------------------
+// Fonction nb de connexion par années
+// ------------------------------------
+function nbVisiteParMois($statistiques) {
+  
+  $nbConnexionToutUserParMois = 0;
+
+  // Recherche des Années
+  $parseDate = array();
+  $tabMois = array();
+  $i =0;
+  // $tabAnnées2 = array();
+  // for( $i<=count($statistiques);) {
+    foreach ($statistiques as $key => $value) {
+      $parseDate[$i] = date_parse($statistiques[$key]['date']);
+      $tabMois[$i] = $parseDate[$key]['month'];
+
+      $i++;
+      // $tabAnnées2 = $tabAnnées['year'].'<br>';
+      
+    } 
+  // }
+  $tabMois = array_unique($tabMois);
+  print_r($tabMois).'<br>';
+
+}
+
+nbVisiteParAn($statistiques);
