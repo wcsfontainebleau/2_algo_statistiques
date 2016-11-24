@@ -2,7 +2,7 @@
 
 ## Objectif:
 
-Ci join un tableau de statistiques.  
+Ci joint un tableau de statistiques.  
 Faire ressortir le nombre de connexion:  
 
 1. Par année tout utilisateur confondu  
