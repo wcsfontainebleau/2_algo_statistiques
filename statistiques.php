@@ -8,6 +8,7 @@
 // Database `perchempnzdb1`
 //
 
+
 // `perchempnzdb1`.`statistiques`
 $statistiques = array(
   array('id' => '1','id_user' => '1','date' => '2016-03-01','nb_visites_accueil' => '14','nb_visites_ged' => NULL,'nb_visites_agenda' => NULL,'nb_visites_annuaire' => NULL,'nb_visites_formation' => NULL,'nb_visites_emploi' => NULL,'nb_visites_dialogue' => NULL),
@@ -87,5 +88,41 @@ $statistiques = array(
   array('id' => '78','id_user' => '3','date' => '2016-06-23','nb_visites_accueil' => '3','nb_visites_ged' => NULL,'nb_visites_agenda' => NULL,'nb_visites_annuaire' => NULL,'nb_visites_formation' => NULL,'nb_visites_emploi' => NULL,'nb_visites_dialogue' => NULL),
   array('id' => '79','id_user' => '42','date' => '2016-06-24','nb_visites_accueil' => '3','nb_visites_ged' => NULL,'nb_visites_agenda' => NULL,'nb_visites_annuaire' => NULL,'nb_visites_formation' => NULL,'nb_visites_emploi' => NULL,'nb_visites_dialogue' => NULL),
   array('id' => '80','id_user' => '1','date' => '2016-06-24','nb_visites_accueil' => '5','nb_visites_ged' => NULL,'nb_visites_agenda' => NULL,'nb_visites_annuaire' => NULL,'nb_visites_formation' => NULL,'nb_visites_emploi' => NULL,'nb_visites_dialogue' => NULL),
-  array('id' => '81','id_user' => '3','date' => '2016-06-27','nb_visites_accueil' => '1','nb_visites_ged' => NULL,'nb_visites_agenda' => NULL,'nb_visites_annuaire' => NULL,'nb_visites_formation' => NULL,'nb_visites_emploi' => NULL,'nb_visites_dialogue' => NULL)
+  array('id' => '81','id_user' => '3','date' => '2016-06-27','nb_visites_accueil' => '1','nb_visites_ged' => NULL,'nb_visites_agenda' => NULL,'nb_visites_annuaire' => NULL,'nb_visites_formation' => NULL,'nb_visites_emploi' => NULL,'nb_visites_dialogue' => NULL),
+  array('id' => '81','id_user' => '3','date' => '2017-06-27','nb_visites_accueil' => '1','nb_visites_ged' => NULL,'nb_visites_agenda' => NULL,'nb_visites_annuaire' => NULL,'nb_visites_formation' => NULL,'nb_visites_emploi' => NULL,'nb_visites_dialogue' => NULL)
 );
+
+
+
+
+
+$value = count($statistiques);
+      echo($value);
+
+
+
+
+// foreach ($statistiques as $value) {
+//     foreach ($value as $value) {
+//     }
+//       echo $value[date];
+//   }
+
+
+
+
+// echo(array_count_values($value));
+
+// $resultat = count(count_chars($value, 1));
+// return $resultat;
+
+
+// $nbr = $statistiques;
+// $nbr = count(array_keys($array,'id_user'));
+
+
+
+ // $array = $statistiques(array);
+  // $id_user = [1];
+
+  // return array_count_values($statistiques($id_user));
