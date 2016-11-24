@@ -10,14 +10,95 @@
 
 // `perchempnzdb1`.`statistiques`
 $statistiques = array(
-  array('id' => '1','id_user' => '1','date' => '2016-03-01','nb_visites_accueil' => '14','nb_visites_ged' => NULL,'nb_visites_agenda' => NULL,'nb_visites_annuaire' => NULL,'nb_visites_formation' => NULL,'nb_visites_emploi' => NULL,'nb_visites_dialogue' => NULL),
-  array('id' => '3','id_user' => '3','date' => '2016-03-01','nb_visites_accueil' => '32','nb_visites_ged' => NULL,'nb_visites_agenda' => NULL,'nb_visites_annuaire' => NULL,'nb_visites_formation' => NULL,'nb_visites_emploi' => NULL,'nb_visites_dialogue' => NULL),
-  array('id' => '4','id_user' => '15','date' => '2016-03-02','nb_visites_accueil' => '1','nb_visites_ged' => NULL,'nb_visites_agenda' => NULL,'nb_visites_annuaire' => NULL,'nb_visites_formation' => NULL,'nb_visites_emploi' => NULL,'nb_visites_dialogue' => NULL),
-  array('id' => '6','id_user' => '3','date' => '2016-03-02','nb_visites_accueil' => '15','nb_visites_ged' => NULL,'nb_visites_agenda' => NULL,'nb_visites_annuaire' => NULL,'nb_visites_formation' => NULL,'nb_visites_emploi' => NULL,'nb_visites_dialogue' => NULL),
-  array('id' => '7','id_user' => '7','date' => '2016-03-02','nb_visites_accueil' => '6','nb_visites_ged' => NULL,'nb_visites_agenda' => NULL,'nb_visites_annuaire' => NULL,'nb_visites_formation' => NULL,'nb_visites_emploi' => NULL,'nb_visites_dialogue' => NULL),
-  array('id' => '8','id_user' => '6','date' => '2016-03-02','nb_visites_accueil' => '2','nb_visites_ged' => NULL,'nb_visites_agenda' => NULL,'nb_visites_annuaire' => NULL,'nb_visites_formation' => NULL,'nb_visites_emploi' => NULL,'nb_visites_dialogue' => NULL),
-  array('id' => '9','id_user' => '3','date' => '2016-03-03','nb_visites_accueil' => '2','nb_visites_ged' => NULL,'nb_visites_agenda' => NULL,'nb_visites_annuaire' => NULL,'nb_visites_formation' => NULL,'nb_visites_emploi' => NULL,'nb_visites_dialogue' => NULL),
-  array('id' => '10','id_user' => '1','date' => '2016-03-04','nb_visites_accueil' => '15','nb_visites_ged' => NULL,'nb_visites_agenda' => NULL,'nb_visites_annuaire' => NULL,'nb_visites_formation' => NULL,'nb_visites_emploi' => NULL,'nb_visites_dialogue' => NULL),
+
+  array('id' => '1',
+        'id_user' => '1',
+        'date' => '2016-03-01',
+        'nb_visites_accueil' => '14',
+        'nb_visites_ged' => NULL,
+        'nb_visites_agenda' => NULL,
+        'nb_visites_annuaire' => NULL,
+        'nb_visites_formation' => NULL,
+        'nb_visites_emploi' => NULL,
+        'nb_visites_dialogue' => NULL),
+
+  array('id' => '3',
+        'id_user' => '3',
+        'date' => '2016-03-01',
+        'nb_visites_accueil' => '32',
+        'nb_visites_ged' => NULL,
+        'nb_visites_agenda' => NULL,
+        'nb_visites_annuaire' => NULL,
+        'nb_visites_formation' => NULL,
+        'nb_visites_emploi' => NULL,
+        'nb_visites_dialogue' => NULL),
+
+  array('id' => '4',
+        'id_user' => '15',
+        'date' => '2016-03-02',
+        'nb_visites_accueil' => '1',
+        'nb_visites_ged' => NULL,
+        'nb_visites_agenda' => NULL,
+        'nb_visites_annuaire' => NULL,
+        'nb_visites_formation' => NULL,
+        'nb_visites_emploi' => NULL,
+        'nb_visites_dialogue' => NULL),
+
+  array('id' => '6',
+        'id_user' => '3',
+        'date' => '2016-03-02',
+        'nb_visites_accueil' => '15',
+        'nb_visites_ged' => NULL,
+        'nb_visites_agenda' => NULL,
+        'nb_visites_annuaire' => NULL,
+        'nb_visites_formation' => NULL,
+        'nb_visites_emploi' => NULL,
+        'nb_visites_dialogue' => NULL),
+
+  array('id' => '7',
+        'id_user' => '7',
+        'date' => '2016-03-02',
+        'nb_visites_accueil' => '6',
+        'nb_visites_ged' => NULL,
+        'nb_visites_agenda' => NULL,
+        'nb_visites_annuaire' => NULL,
+        'nb_visites_formation' => NULL,
+        'nb_visites_emploi' => NULL,
+        'nb_visites_dialogue' => NULL),
+
+  array('id' => '8',
+        'id_user' => '6',
+        'date' => '2016-03-02',
+        'nb_visites_accueil' => '2',
+        'nb_visites_ged' => NULL,
+        'nb_visites_agenda' => NULL,
+        'nb_visites_annuaire' => NULL,
+        'nb_visites_formation' => NULL,
+        'nb_visites_emploi' => NULL,
+        'nb_visites_dialogue' => NULL),
+
+  array('id' => '9',
+        'id_user' => '3',
+        'date' => '2016-03-03',
+        'nb_visites_accueil' => '2',
+        'nb_visites_ged' => NULL,
+        'nb_visites_agenda' => NULL,
+        'nb_visites_annuaire' => NULL,
+        'nb_visites_formation' => NULL,
+        'nb_visites_emploi' => NULL,
+        'nb_visites_dialogue' => NULL),
+
+  array('id' => '10',
+        'id_user' => '1',
+        'date' => '2016-03-04',
+        'nb_visites_accueil' => '15',
+        'nb_visites_ged' => NULL,
+        'nb_visites_agenda' => NULL,
+        'nb_visites_annuaire' => NULL,
+        'nb_visites_formation' => NULL,
+        'nb_visites_emploi' => NULL,
+        'nb_visites_dialogue' => NULL),
+
   array('id' => '11','id_user' => '3','date' => '2016-03-04','nb_visites_accueil' => '3','nb_visites_ged' => NULL,'nb_visites_agenda' => NULL,'nb_visites_annuaire' => NULL,'nb_visites_formation' => NULL,'nb_visites_emploi' => NULL,'nb_visites_dialogue' => NULL),
   array('id' => '12','id_user' => '1','date' => '2016-03-05','nb_visites_accueil' => '8','nb_visites_ged' => NULL,'nb_visites_agenda' => NULL,'nb_visites_annuaire' => NULL,'nb_visites_formation' => NULL,'nb_visites_emploi' => NULL,'nb_visites_dialogue' => NULL),
   array('id' => '13','id_user' => '1','date' => '2016-03-06','nb_visites_accueil' => '5','nb_visites_ged' => NULL,'nb_visites_agenda' => NULL,'nb_visites_annuaire' => NULL,'nb_visites_formation' => NULL,'nb_visites_emploi' => NULL,'nb_visites_dialogue' => NULL),
@@ -89,3 +170,25 @@ $statistiques = array(
   array('id' => '80','id_user' => '1','date' => '2016-06-24','nb_visites_accueil' => '5','nb_visites_ged' => NULL,'nb_visites_agenda' => NULL,'nb_visites_annuaire' => NULL,'nb_visites_formation' => NULL,'nb_visites_emploi' => NULL,'nb_visites_dialogue' => NULL),
   array('id' => '81','id_user' => '3','date' => '2016-06-27','nb_visites_accueil' => '1','nb_visites_ged' => NULL,'nb_visites_agenda' => NULL,'nb_visites_annuaire' => NULL,'nb_visites_formation' => NULL,'nb_visites_emploi' => NULL,'nb_visites_dialogue' => NULL)
 );
+
+
+
+    foreach ($statistiques as $key=>$stat) {
+
+        $stat = $stat++;
+        $stat = count($stat);
+
+        // foreach ($stat as $key=>$date) {
+
+        //     $date = count($date[2]);
+
+
+
+        // }
+
+
+    }
+
+
+echo $stat . "\n";
+//echo $date . "\n";
