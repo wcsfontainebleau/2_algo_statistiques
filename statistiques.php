@@ -189,7 +189,7 @@ $statistiques = array(
 
         echo $stat['id_user'] . "\n"; // affiche du vide pk?
 
-        foreach ($$stat as $key => $value) {
+        foreach ($$stat as $key => c$value) {
             echo $value['id_user']."\n";
         }
 
