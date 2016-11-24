@@ -89,3 +89,7 @@ $statistiques = array(
   array('id' => '80','id_user' => '1','date' => '2016-06-24','nb_visites_accueil' => '5','nb_visites_ged' => NULL,'nb_visites_agenda' => NULL,'nb_visites_annuaire' => NULL,'nb_visites_formation' => NULL,'nb_visites_emploi' => NULL,'nb_visites_dialogue' => NULL),
   array('id' => '81','id_user' => '3','date' => '2016-06-27','nb_visites_accueil' => '1','nb_visites_ged' => NULL,'nb_visites_agenda' => NULL,'nb_visites_annuaire' => NULL,'nb_visites_formation' => NULL,'nb_visites_emploi' => NULL,'nb_visites_dialogue' => NULL)
 );
+
+function getStatistiques() {
+    return $statistiques;
+}
