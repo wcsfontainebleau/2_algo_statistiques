@@ -44,6 +44,7 @@ $statistiques = array(
         'nb_visites_emploi' => NULL,
         'nb_visites_dialogue' => NULL),
 
+
   array('id' => '6',
         'id_user' => '3',
         'date' => '2016-03-02',
@@ -115,7 +116,7 @@ $statistiques = array(
   array('id' => '25','id_user' => '1','date' => '2016-03-20','nb_visites_accueil' => '3','nb_visites_ged' => NULL,'nb_visites_agenda' => NULL,'nb_visites_annuaire' => NULL,'nb_visites_formation' => NULL,'nb_visites_emploi' => NULL,'nb_visites_dialogue' => NULL),
   array('id' => '26','id_user' => '1','date' => '2016-03-22','nb_visites_accueil' => '2','nb_visites_ged' => NULL,'nb_visites_agenda' => NULL,'nb_visites_annuaire' => NULL,'nb_visites_formation' => NULL,'nb_visites_emploi' => NULL,'nb_visites_dialogue' => NULL),
   array('id' => '27','id_user' => '3','date' => '2016-04-05','nb_visites_accueil' => '3','nb_visites_ged' => NULL,'nb_visites_agenda' => NULL,'nb_visites_annuaire' => NULL,'nb_visites_formation' => NULL,'nb_visites_emploi' => NULL,'nb_visites_dialogue' => NULL),
-  array('id' => '28','id_user' => '29','date' => '2016-04-05','nb_visites_accueil' => '10','nb_visites_ged' => NULL,'nb_visites_agenda' => NULL,'nb_visites_annuaire' => NULL,'nb_visites_formation' => NULL,'nb_visites_emploi' => NULL,'nb_visites_dialogue' => NULL),
+  array('id' => '28','id_user' => '29','date' => '2016-04-05','nb_visites_accueil' => '10','nb_visites_ged' =>NULL,'nb_visites_agenda' => NULL,'nb_visites_annuaire' => NULL,'nb_visites_formation' => NULL,'nb_visites_emploi' => NULL,'nb_visites_dialogue' => NULL),
   array('id' => '29','id_user' => '29','date' => '2016-04-07','nb_visites_accueil' => '1','nb_visites_ged' => NULL,'nb_visites_agenda' => NULL,'nb_visites_annuaire' => NULL,'nb_visites_formation' => NULL,'nb_visites_emploi' => NULL,'nb_visites_dialogue' => NULL),
   array('id' => '30','id_user' => '8','date' => '2016-04-07','nb_visites_accueil' => '4','nb_visites_ged' => NULL,'nb_visites_agenda' => NULL,'nb_visites_annuaire' => NULL,'nb_visites_formation' => NULL,'nb_visites_emploi' => NULL,'nb_visites_dialogue' => NULL),
   array('id' => '31','id_user' => '10','date' => '2016-04-07','nb_visites_accueil' => '1','nb_visites_ged' => NULL,'nb_visites_agenda' => NULL,'nb_visites_annuaire' => NULL,'nb_visites_formation' => NULL,'nb_visites_emploi' => NULL,'nb_visites_dialogue' => NULL),
@@ -175,20 +176,12 @@ $statistiques = array(
 
     foreach ($statistiques as $key=>$stat) {
 
-        $stat = $stat++;
-        $stat = count($stat);
+        $stat = count($stat); //retourne le nombre de valeurs de l'array du visiteur 
 
-        // foreach ($stat as $key=>$date) {
-
-        //     $date = count($date[2]);
-
-
-
-        // }
+        echo $stat[0] . "\n";
 
 
     }
 
 
 echo $stat . "\n";
-//echo $date . "\n";
